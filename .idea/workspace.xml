@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="002edb94-6314-4b99-b0b1-f5508f15807e" name="Changes" comment="Changed class names and started general testing outline (referenced in Teams)">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="002edb94-6314-4b99-b0b1-f5508f15807e" name="Changes" comment="Finished login test class, needs to be verified (ran).">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/WikiTest/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/WikiTest/EnglishHomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/WikiTest/EnglishHomePageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/WikiTest/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/WikiTest/LoginTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,6 +23,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -30,13 +36,16 @@
     &quot;assignee&quot;: &quot;NickPalceski&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/NickPalceski/WikipediaTesting.git",
-    "accountId": "c9d702ea-ba08-4f33-b21d-5ec4fdd6c74f"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/NickPalceski/WikipediaTesting.git&quot;,
+    &quot;accountId&quot;: &quot;c9d702ea-ba08-4f33-b21d-5ec4fdd6c74f&quot;
   }
-}]]></component>
+}</component>
   <component name="ProblemsViewState">
+    <hideBySeverity>
+      <option value="200" />
+    </hideBySeverity>
     <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
@@ -52,7 +61,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "EnglishHomePage",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/nicho/OneDrive/Desktop/Github Repos/WikipediaTesting",
@@ -92,7 +101,8 @@
       <workItem from="1743523018543" duration="66000" />
       <workItem from="1743523992015" duration="1844000" />
       <workItem from="1744917113909" duration="2147000" />
-      <workItem from="1744929976666" duration="2147000" />
+      <workItem from="1744929976666" duration="2657000" />
+      <workItem from="1745100135878" duration="2936000" />
     </task>
     <task id="LOCAL-00001" summary="First commit, yay!">
       <option name="closed" value="true" />
@@ -134,7 +144,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743525814378</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Finished login test class, needs to be verified (ran).">
+      <option name="closed" value="true" />
+      <created>1744933599766</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1744933599766</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,6 +178,7 @@
     <MESSAGE value="test commit" />
     <MESSAGE value="Added src files to project structure modules." />
     <MESSAGE value="Changed class names and started general testing outline (referenced in Teams)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed class names and started general testing outline (referenced in Teams)" />
+    <MESSAGE value="Finished login test class, needs to be verified (ran)." />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished login test class, needs to be verified (ran)." />
   </component>
 </project>

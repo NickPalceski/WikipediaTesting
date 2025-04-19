@@ -1,32 +1,21 @@
 package org.WikiTest;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
-public class LoginTest {
+public class LoginTest extends BaseTest{
 
-    WebDriver driver;
-
-    @BeforeSuite
-    public void beforeSuite(){
-        System.out.println("(Before Suite) Preparing test suite");
-        System.setProperty("webdriver.firefox.driver",
-                "C:\\Users\\nicho\\OneDrive\\Desktop\\Browser-Drivers\\geckodriver.exe");
-    }
 
     @BeforeClass
     public void beforeClass(){
-        System.out.println("(Before Class) Preparing class testing");
-        driver = new FirefoxDriver();
+        System.out.println("(Before Class) Preparing LoginTest testing");
+        driver.get("https://en.wikipedia.org/w/index.php?title=Special:UserLogin&returnto=Main+Page");
     }
 
-    //1.1 - Invalid Login
+    //  1.1 - Invalid Login
     //		→ Navigate to Login page
     //		→ Login to Wikipedia using a INVALID username and password
     //		→ Confirm that you are not logged in (error message should appear)
@@ -38,7 +27,6 @@ public class LoginTest {
         String invalidPassword = "invalidPass";
 
         System.out.println("Invalid Login Test");
-        driver.get("https://en.wikipedia.org/w/index.php?title=Special:UserLogin&returnto=Main+Page");
 
         // Get username and password elements
         WebElement username = driver.findElement(By.id("wpName1"));
