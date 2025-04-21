@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="002edb94-6314-4b99-b0b1-f5508f15807e" name="Changes" comment="Finished login test class, needs to be verified (ran).">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/WikiTest/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/WikiTest/EnglishHomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/WikiTest/EnglishHomePageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/WikiTest/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/WikiTest/LoginTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="002edb94-6314-4b99-b0b1-f5508f15807e" name="Changes" comment="English home page testing done (needs to be verified/ran)." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,7 +56,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "EnglishHomePage",
+    "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/nicho/OneDrive/Desktop/Github Repos/WikipediaTesting",
@@ -152,7 +147,23 @@
       <option name="project" value="LOCAL" />
       <updated>1744933599766</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Transferred Connor's classes to scope of project and fixed inconsistencies.">
+      <option name="closed" value="true" />
+      <created>1745258266046</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1745258266046</updated>
+    </task>
+    <task id="LOCAL-00008" summary="English home page testing done (needs to be verified/ran).">
+      <option name="closed" value="true" />
+      <created>1745260283923</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1745260283923</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,6 +190,8 @@
     <MESSAGE value="Added src files to project structure modules." />
     <MESSAGE value="Changed class names and started general testing outline (referenced in Teams)" />
     <MESSAGE value="Finished login test class, needs to be verified (ran)." />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished login test class, needs to be verified (ran)." />
+    <MESSAGE value="Transferred Connor's classes to scope of project and fixed inconsistencies." />
+    <MESSAGE value="English home page testing done (needs to be verified/ran)." />
+    <option name="LAST_COMMIT_MESSAGE" value="English home page testing done (needs to be verified/ran)." />
   </component>
 </project>
