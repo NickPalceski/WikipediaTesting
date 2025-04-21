@@ -4,29 +4,29 @@ import org.testng.annotations.Test;
 
 public class EditingTest {
 
-// 5.1 - Click on "Edit" Link
+// 5.1 - Login Editing Confirmation
     @Test(priority = 1)
-    public void clickEditLink() {
+    public void loginEditingConfirmation() {
     }
 
-// 5.2 - Select "Switch to Visual Editor" option
+// 5.2 - Previewing Edits
     @Test(priority = 2)
-    public void selectVisualEditor() {
+    public void previewEdits() {
     }
 
-// 5.3 - Select "Start Editing" option
+// 5.3 - Administrator Only editing
     @Test(priority = 3)
-    public void startEditing() {
+    public void administratorOnlyEditing() {
     }
 
-// 5.4 - Type something in
+// 5.4 - Wikipedia Link Insert
     @Test(priority = 4)
-    public void typeIn() {
+    public void linkInsert() {
     }
 
-// 5.5 - Switch to Visual Editing
+// 5.5 - Visual Editor
     @Test(priority = 5)
-    public void switchToVisualEditing() {
+    public void visualEditor() {
     }
 
 }
