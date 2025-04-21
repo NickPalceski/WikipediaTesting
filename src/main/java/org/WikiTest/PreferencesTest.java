@@ -14,7 +14,7 @@ public class PreferencesTest extends BaseTest{
     @BeforeClass
     void classSetup() throws InterruptedException{
         scroll = (JavascriptExecutor) driver;
-        driver.navigate().to("https://en.wikipedia.org/wiki/Main_Page");
+        driver.get("https://en.wikipedia.org/wiki/Main_Page");
         Thread.sleep(1000);
         driver.findElement(By.id("pt-login-2")).click();
         Thread.sleep(1000);
