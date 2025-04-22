@@ -19,7 +19,7 @@ import org.testng.Assert;
 // URL: https://en.wikipedia.org/wiki/Japan
 // Timers are going to be generous due to load times among other things
 // namely time to explain in-class.
-public class AccessibilityTest {
+public class AccessibilityTest extends BaseTest {
     // Initialized variables
     WebDriver driver;
     WebElement element;
@@ -30,10 +30,8 @@ public class AccessibilityTest {
     // Before Test
     @BeforeTest
     public void beforeTest() {
-        // This might not be necessary
-        // System.setProperty("webdriver.firefox.driver", "E:\\Coding Software\\Intellj\\Firefox Driver\\geckodriver.exe");
-        //
-        //
+
+        System.out.println("(Before Class) Preparing AccessibilityTest testing...");
         driver = new FirefoxDriver();
         action = new Actions(driver);
         driver.get("https://en.wikipedia.org/wiki/Japan");
@@ -46,7 +44,7 @@ public class AccessibilityTest {
             element = driver.findElement(By.id("p-lang-btn"));
             element.click();
             Thread.sleep(2000);
-            element = driver.findElement(By.xpath("/html/body/div[1]/div[2]/div[1]/div/ul[2]/li[4]/a"));
+            element = driver.findElement(By.linkText("Español"));
             element.click();
             Thread.sleep(2000);
 
@@ -59,7 +57,7 @@ public class AccessibilityTest {
             element = driver.findElement(By.id("p-lang-btn"));
             element.click();
             Thread.sleep(2000);
-            element = driver.findElement(By.xpath("/html/body/div[1]/div[2]/div[1]/div/ul[2]/li[5]/a"));
+            element = driver.findElement(By.linkText("Français"));
             element.click();
             Thread.sleep(2000);
 
@@ -72,7 +70,7 @@ public class AccessibilityTest {
             element = driver.findElement(By.id("p-lang-btn"));
             element.click();
             Thread.sleep(2000);
-            element = driver.findElement(By.xpath("/html/body/div[1]/div[2]/div[1]/div[1]/ul[2]/li[2]/a"));
+            element = driver.findElement(By.linkText("Deutsch"));
             element.click();
             Thread.sleep(2000);
 
@@ -83,7 +81,7 @@ public class AccessibilityTest {
             // German -> English (test done)
             element = driver.findElement(By.id("p-lang-btn"));
             element.click();
-            element = driver.findElement(By.xpath("/html/body/div[1]/div[2]/div[1]/div[1]/ul[2]/li[3]/a"));
+            element = driver.findElement(By.linkText("English"));
             element.click();
         }
 
@@ -91,20 +89,28 @@ public class AccessibilityTest {
         @Test(priority = 2)
         public void rightToLeftLangauges() throws InterruptedException {
 
-            // Selects Arabic language
-            element = driver.findElement(By.id("p-lang-btn"));
-            element.click();
-            element = driver.findElement(By.xpath("/html/body/div[1]/div[1]/div/div/input[2]"));
-            element.sendKeys("Arabic");
+            driver.get("https://en.wikipedia.org/wiki/Japan");
 
-            // Let's the search bar load the options
+            // Finds select language button
+            element = driver.findElement(By.cssSelector("input#p-lang-btn-checkbox"));
+            Thread.sleep(2000);
+            element.click();
+            Thread.sleep(2000);
+
+            // Clicks "Yiddish" button from dropdown
+            element = driver.findElement(By.xpath("//a[@class='autonym' and @lang='yi' and @dir='rtl']"));
+            element.click();
+            Thread.sleep(3000);
+
+            // Navigate back to English Page
+            element = driver.findElement(By.id("p-lang-btn"));
+            Thread.sleep(1000);
+            element.click();
             Thread.sleep(1000);
 
-            element = driver.findElement(By.xpath("/html/body/div[1]/div[2]/div[9]/div/ul/li[1]/a"));
+            element = driver.findElement(By.cssSelector("a.autonym[lang='en'][dir='ltr']"));
             element.click();
-
-            Thread.sleep(2500);
-            driver.get("https://en.wikipedia.org/wiki/Japan");
+            Thread.sleep(3000);
 
         }
 
@@ -113,66 +119,81 @@ public class AccessibilityTest {
         public void altText() throws InterruptedException {
             Thread.sleep(3000);
             // Japan flag alt text: Flag of Japan
-            actual = driver.findElement(By.xpath("/html/body/div[2]/div/div[3]/main/div[3]/div[3]/div[1]/table[1]/tbody/tr[2]/td/div/div[1]/div[1]/span/a")).getDomAttribute("title");
+            actual = driver.findElement(By.xpath(
+                    "/html/body/div[2]/div/div[3]/main/div[3]/div[3]/div[1]/table[1]/tbody/tr[2]/td/div/div[1]/div[1]/span/a")
+            ).getDomAttribute("title");
+            System.out.println("Alt Text of Japan Flag: " + actual);
             Assert.assertEquals(actual, "Flag of Japan");
 
             // Imperial Seal: Imperial Seal of Japan
-            actual = driver.findElement(By.xpath("/html/body/div[2]/div/div[3]/main/div[3]/div[3]/div[1]/table[1]/tbody/tr[2]/td/div/div[2]/div[1]/span/a")).getDomAttribute("title");
+            actual = driver.findElement(By.xpath(
+                    "/html/body/div[2]/div/div[3]/main/div[3]/div[3]/div[1]/table[1]/tbody/tr[2]/td/div/div[2]/div[1]/span/a")
+            ).getDomAttribute("title");
+            System.out.println("Alt Text of Imperial Seal: " + actual);
             Assert.assertEquals(actual, "Imperial Seal of Japan");
 
             // State Seal: Seal of the State of Japan
-            actual = driver.findElement(By.xpath("/html/body/div[2]/div/div[3]/main/div[3]/div[3]/div[1]/table[1]/tbody/tr[4]/td/span[3]/a")).getDomAttribute("title");
+            actual = driver.findElement(By.xpath(
+                    "/html/body/div[2]/div/div[3]/main/div[3]/div[3]/div[1]/table[1]/tbody/tr[4]/td/span[3]/a")
+            ).getDomAttribute("title");
+            System.out.println("Alt Text of Seal of the State of Japan: " + actual);
             Assert.assertEquals(actual, "Seal of the State of Japan");
+
+            Thread.sleep(2000);
         }
 
 // 6.4 - Keyboard Shortcuts
     @Test(priority = 4)
     public void keyboardShortcuts() throws InterruptedException {
-        Thread.sleep(750);
-        action.keyDown(Keys.TAB).perform();
-        action.keyDown(Keys.TAB).perform();
-        action.keyDown(Keys.TAB).perform();
+        // Press "TAB"
+        for(int i = 0; i < 11; i++) {
+            action.keyDown(Keys.TAB).perform();
+            Thread.sleep(1000);
+        }
 
-        Thread.sleep(750); // should be on the wikipedia home icon
-        action.keyDown(Keys.TAB).perform();
+        // Press "SHIFT + TAB"
+        for(int i = 0; i < 10; i++) {
+            action.keyDown(Keys.SHIFT);
+            action.sendKeys(Keys.TAB).perform();
+            Thread.sleep(1000);
+        }
+        Thread.sleep(2000);
 
-        Thread.sleep(750); // should be on the search bar
+        // History shortcut (ALT + SHIFT + H)
+        action.keyDown(Keys.ALT);
         action.keyDown(Keys.SHIFT);
-        action.keyDown(Keys.TAB).perform();
-
-        // History shortcut
-        Thread.sleep(1000); // should be back to the wikipedia home icon
-        action.keyDown(Keys.ALT); // Should now be holding Alt + Shift
         action.sendKeys("h").perform();
-
-        // Related Changes shortcut
-        Thread.sleep(2500);
+        Thread.sleep(3000);
         Assert.assertEquals(driver.getCurrentUrl(), "https://en.wikipedia.org/w/index.php?title=Japan&action=history");
+
+        // Related Changes shortcut (ALT + SHIFT + K)
         action.keyDown(Keys.SHIFT);
         action.keyDown(Keys.ALT);
-        action.sendKeys("k").perform();
-
-        // Talk shortcut
-        Thread.sleep(2500);
+        action.sendKeys("K").perform();
+        Thread.sleep(3000);
         Assert.assertEquals(driver.getCurrentUrl(), "https://en.wikipedia.org/wiki/Special:RecentChangesLinked?hidebots=1&hidecategorization=1&hideWikibase=1&target=Japan&limit=50&days=7&urlversion=2");
+
+
+        // Talk shortcut (ALT + SHIFT + T)
         action.keyDown(Keys.SHIFT);
         action.keyDown(Keys.ALT);
         action.sendKeys("t").perform();
+        Thread.sleep(3000);
+        Assert.assertEquals(driver.getCurrentUrl(), "https://en.wikipedia.org/wiki/Talk:Japan");
 
         // Edit shortcut
-        Thread.sleep(2500);
-        Assert.assertEquals(driver.getCurrentUrl(), "https://en.wikipedia.org/wiki/Talk:Japan");
-        action.keyDown(Keys.ALT);
-        action.keyDown(Keys.SHIFT);
-        action.sendKeys("e").perform();
-
-
-        Thread.sleep(2500);
-        Assert.assertEquals(driver.getCurrentUrl(), "https://en.wikipedia.org/wiki/Talk:Japan");
-
+        driver.get("https://en.wikipedia.org/wiki/Japan");
         Thread.sleep(2000);
-        driver.get("https://en.wikipedia.org/wiki/Japan");;
+        action.keyDown(Keys.SHIFT);
+        action.keyDown(Keys.ALT);
+        action.sendKeys("e").perform();
+        Thread.sleep(3000);
+        Assert.assertEquals(driver.getCurrentUrl(), "https://en.wikipedia.org/w/index.php?title=Japan&action=edit");
 
+
+        // Go back to Japan Page
+        Thread.sleep(2000);
+        driver.get("https://en.wikipedia.org/wiki/Japan");
         Thread.sleep(3000);
 
     }
@@ -180,14 +201,15 @@ public class AccessibilityTest {
     // 6.5 - Responsive Design
     @Test(priority = 5)
     public void responsiveDesign() throws InterruptedException {
-        Thread.sleep(750);
+        Thread.sleep(1000);
         driver.manage().window().setSize(new Dimension(1920,1080));
+        Thread.sleep(2000);
 
-        Thread.sleep(2500);
         driver.manage().window().setSize(new Dimension(1440,810));
+        Thread.sleep(2000);
 
-        Thread.sleep(2500);
         driver.manage().window().setSize(new Dimension(860,540));
+        Thread.sleep(2000);
 
         // Begin testing options
         Thread.sleep(2500);
@@ -195,15 +217,15 @@ public class AccessibilityTest {
         element = driver.findElement(By.id("skin-client-pref-vector-feature-custom-font-size-value-0"));
         element.click();
 
-        Thread.sleep(750);
+        Thread.sleep(1000);
         element = driver.findElement(By.id("skin-client-pref-vector-feature-limited-width-value-0"));
         element.click();
 
-        Thread.sleep(750);
+        Thread.sleep(1000);
         element = driver.findElement(By.id("skin-client-pref-skin-theme-value-night"));
         element.click();
 
-        Thread.sleep(750);
+        Thread.sleep(1000);
         element = driver.findElement(By.xpath("/html/body/div[2]/div/div[3]/main/div[3]/div[3]/div[1]/p[3]/a[26]"));
         element.click();
 
@@ -211,18 +233,14 @@ public class AccessibilityTest {
         element = driver.findElement(By.id("skin-client-pref-vector-feature-custom-font-size-value-1"));
         element.click();
 
-        Thread.sleep(750);
+        Thread.sleep(1000);
         element = driver.findElement(By.id("skin-client-pref-vector-feature-limited-width-value-1"));
         element.click();
 
-        Thread.sleep(750);
+        Thread.sleep(1000);
         element = driver.findElement(By.id("skin-client-pref-skin-theme-value-day"));
         element.click();
 
         Thread.sleep(2500);
     }
-
-    // Not sure how the next test is coded
-    // So I'm not sure if I should close the window
-    // or not.
 }
