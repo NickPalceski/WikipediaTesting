@@ -15,9 +15,6 @@ public class BaseTest {
         System.out.println("(Before Suite) Preparing test suite");
         System.setProperty("webdriver.firefox.driver",
                 "C:\\Users\\nicho\\OneDrive\\Desktop\\Browser-Drivers\\geckodriver.exe");
-        driver = new FirefoxDriver();
-        driver.get("https://www.wikipedia.org/");
-
     }
 
     @AfterSuite

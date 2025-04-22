@@ -3,6 +3,7 @@ package org.WikiTest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -18,7 +19,8 @@ public class EnglishHomePageTest extends BaseTest {
     @BeforeClass
     public void beforeClass(){
         System.out.println("(Before Class) Preparing LoginTest testing");
-        driver.get("https://en.wikipedia.org/wiki/Main_Page");
+        driver = new FirefoxDriver();
+        driver.get("https://www.wikipedia.org/");
     }
 
     //  2.1  - Image Functionality
@@ -33,6 +35,8 @@ public class EnglishHomePageTest extends BaseTest {
     @Test(priority = 1)
     public void imageFunctionality() throws InterruptedException {
 
+        // Wait for page to load
+        Thread.sleep(2000);
         // Click the "English" button (top left of logo)
         WebElement englishButton = driver.findElement(By.id("js-link-box-en"));
         englishButton.click();
@@ -57,9 +61,7 @@ public class EnglishHomePageTest extends BaseTest {
         firstImage.click();
 
         // Click the full screen button
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        WebElement fullscreenButton = wait.until(ExpectedConditions.elementToBeClickable(
-                By.className("cdx-button.cdx-button--icon-only.mw-mmv-button.mw-mmv-fullscreen")));
+        WebElement fullscreenButton = driver.findElement(By.className("mw-mmv-icon"));
         fullscreenButton.click();
 
         // Wait and verify full screen mode
@@ -74,6 +76,7 @@ public class EnglishHomePageTest extends BaseTest {
         Thread.sleep(500); // Give time for close
 
         // Click through 3 images using the next arrow
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         WebElement nextArrow = wait.until(ExpectedConditions.elementToBeClickable(
                 By.className("cdx-button.cdx-button--icon-only.cdx-button--size-large.mw-mmv-button.mw-mmv-next-image")));
         for (int i = 0; i < 3; i++) {
@@ -97,8 +100,9 @@ public class EnglishHomePageTest extends BaseTest {
     //		→ Click Done
     //		→ Rehover over previous linked text to confirm page preview is disabled (not showing)
     @Test(priority = 2)
-    public void disablePagePreview(){
+    public void disablePagePreview() throws InterruptedException {
 
+        driver.get("https://en.wikipedia.org/wiki/Main_Page");
         // Hover over any linked text (Pope Francis is used here for precision on homepage; subject to change)
         WebElement linkedText = driver.findElement(By.xpath("//a[@href='/wiki/Pope_Francis']"));
 
@@ -107,9 +111,8 @@ public class EnglishHomePageTest extends BaseTest {
         actions.moveToElement(linkedText).perform();
 
         // Wait for the submenu to appear
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        WebElement cogSymbol = wait.until(ExpectedConditions.elementToBeClickable(
-                By.className("mw-ui-icon.mw-ui-icon-element.mw-ui-icon-wikimedia-cog")));
+        Thread.sleep(2000);
+        WebElement cogSymbol = driver.findElement(By.className("mwe-popups mwe-popups-type-page mwe-popups-fade-in-up flipped-x mwe-popups-image-pointer mwe-popups-is-tall"));
         cogSymbol.click();
 
         // Uncheck the box in the popup
@@ -179,11 +182,14 @@ public class EnglishHomePageTest extends BaseTest {
 
         // Click on the article image (denmark flag)
         driver.get("https://en.wikipedia.org/wiki/1857_in_Denmark");
-        WebElement articleImage = driver.findElement(By.xpath("//img[@alt='Flag of Denmark']"));
+
+        // Wait for page to load
+        Thread.sleep(2000);
+        WebElement articleImage = driver.findElement(By.xpath("//table[contains(@class, 'infobox')]//a/img"));
         articleImage.click();
 
         // Click the button "More Details" in the bottom right
-        WebElement moreDetailsButton = driver.findElement(By.xpath("//a[contains(@href, 'Special:FilePath/')]"));
+        WebElement moreDetailsButton = driver.findElement(By.className("cdx-button__icon"));
         moreDetailsButton.click();
 
         // Click the "Download all sizes" link in the top left of the webpage
@@ -223,7 +229,7 @@ public class EnglishHomePageTest extends BaseTest {
     //            → Locate “Download” button on new tab
     //		→ Confirm downloaded PDF of article (try to open it if possible)
     @Test(priority = 5)
-    public void downloadArticlePDF(){
+    public void downloadArticlePDF() throws InterruptedException {
         // Go to an article (Japan)
         driver.get("https://en.wikipedia.org/wiki/Japan");
 
@@ -232,20 +238,14 @@ public class EnglishHomePageTest extends BaseTest {
         toolsDropdown.click();
 
         // Click "Download as PDF"
-        WebElement downloadAsPDFLink = driver.findElement(By.id("t-printableversion"));
+        WebElement downloadAsPDFLink = driver.findElement(By.id("coll-download-as-rl"));
         downloadAsPDFLink.click();
 
-        // Wait for the new tab to open
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        wait.until(ExpectedConditions.numberOfWindowsToBe(2));
-
-        // Switch to the new tab
-        for (String windowHandle : driver.getWindowHandles()) {
-            driver.switchTo().window(windowHandle);
-        }
+        // load page
+        Thread.sleep(1000);
 
         // Locate "Download" button on new tab
-        WebElement downloadButton = driver.findElement(By.linkText("Download"));
+        WebElement downloadButton = driver.findElement(By.className("oo-ui-inputWidget-input.oo-ui-buttonElement-button"));
         Assert.assertTrue(downloadButton.isDisplayed(), "Download button is not visible");
 
         // Click the download button

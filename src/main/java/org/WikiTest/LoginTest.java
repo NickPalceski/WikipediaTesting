@@ -2,9 +2,14 @@ package org.WikiTest;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+
+import java.time.Duration;
 
 public class LoginTest extends BaseTest{
 
@@ -12,6 +17,7 @@ public class LoginTest extends BaseTest{
     @BeforeClass
     public void beforeClass(){
         System.out.println("(Before Class) Preparing LoginTest testing");
+        driver = new FirefoxDriver();
         driver.get("https://en.wikipedia.org/w/index.php?title=Special:UserLogin&returnto=Main+Page");
     }
 
@@ -53,7 +59,7 @@ public class LoginTest extends BaseTest{
     //		→ Now, enter a VALID username and password
     //		→ Confirm you are logged in
     @Test(priority = 2)
-    public void validLogin() {
+    public void validLogin() throws InterruptedException {
 
         // Initialize test data
         String validUsername = "SoftwareTestingTest";
@@ -73,12 +79,12 @@ public class LoginTest extends BaseTest{
         WebElement loginButton = driver.findElement(By.id("wpLoginAttempt"));
         loginButton.click();
 
-        //verify that the user is logged in (check if logout button is available)
-        WebElement dropDown = driver.findElement(By.id("vector-user-links-dropdown-checkbox"));
-        dropDown.click();
+        // load page
+        Thread.sleep(2000);
 
-        WebElement logoutButton = driver.findElement(By.className("vector-icon mw-ui-icon-logOut mw-ui-icon-wikimedia-logOut"));
-        Assert.assertTrue(logoutButton.isDisplayed(), "User is not logged in.");
+        //verify that the user is logged in (see if login button is still available)
+        WebElement userSpan = driver.findElement(By.xpath("//span[text()='SoftwareTestingTest']"));
+        Assert.assertTrue(userSpan.isDisplayed(), "Failed to login.");
     }
 
     // 	1.3 - Logout
@@ -95,7 +101,10 @@ public class LoginTest extends BaseTest{
         dropDown.click();
 
         //Logout of account
-        WebElement logoutButton = driver.findElement(By.className("vector-icon mw-ui-icon-logOut mw-ui-icon-wikimedia-logOut"));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebElement logoutButton = wait.until(ExpectedConditions.elementToBeClickable(
+                By.xpath("//a[contains(@href, 'Special:UserLogout') and .//span[text()='Log out']]")
+        ));
         logoutButton.click();
 
         // Verify that the user is logged out
@@ -123,7 +132,7 @@ public class LoginTest extends BaseTest{
         Assert.assertEquals(currentUrl, expectedUrl, "Forgot Password page is not reached.");
 
         // Click "reset password" button
-        WebElement resetPasswordBtn = driver.findElement(By.className("oo-ui-labelElement-label"));
+        WebElement resetPasswordBtn = driver.findElement(By.id("ooui-php-6"));
         resetPasswordBtn.click();
 
         // Verify "password reset has been sent" page is shown
@@ -141,7 +150,7 @@ public class LoginTest extends BaseTest{
     //		→ Reopen Wikipedia
     //		→ Confirm you are still logged in
     @Test(priority = 5)
-    public void keepMeLoggedIn(){
+    public void keepMeLoggedIn() throws InterruptedException {
 
         System.out.println("Keep Me Logged In Test");
         driver.get("https://en.wikipedia.org/w/index.php?title=Special:UserLogin&returnto=Main+Page");
@@ -171,16 +180,18 @@ public class LoginTest extends BaseTest{
         //verify that the user is logged in
         WebElement dropDown = driver.findElement(By.id("vector-user-links-dropdown-checkbox"));
         dropDown.click();
-        WebElement logoutButton = driver.findElement(By.className("vector-icon mw-ui-icon-logOut mw-ui-icon-wikimedia-logOut"));
+        WebElement logoutButton = driver.findElement(By.xpath("//a[@title='Log out' and contains(@href, 'Special:UserLogout')]"));
         Assert.assertTrue(logoutButton.isDisplayed(), "User is not logged in.");
 
         //Reopen Wikipedia
-        driver.close();
         driver.get("https://en.wikipedia.org/w/index.php?title=Special:UserLogin&returnto=Main+Page");
 
+        // Wait for page response
+        Thread.sleep(1000);
+
         // verify user is still logged in
-        dropDown.click();
-        Assert.assertTrue(logoutButton.isDisplayed(), "User is not logged in.");
+        WebElement userSpan = driver.findElement(By.xpath("//span[text()='SoftwareTestingTest']"));
+        Assert.assertTrue(userSpan.isDisplayed(), "Failed to stay logged in.");
 
     }
 
