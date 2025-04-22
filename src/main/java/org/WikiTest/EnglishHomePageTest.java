@@ -113,9 +113,14 @@ public class EnglishHomePageTest extends BaseTest {
         Actions actions = new Actions(driver);
         actions.moveToElement(linkedText).perform();
 
+        //wait
+        Thread.sleep(1000);
+
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+
         // Click cog symbol
-        WebElement cogSymbol = driver.findElement(
-                By.className("popups-icon.popups-icon--size-small.popups-icon--settings"));
+        WebElement cogSymbol = wait.until(ExpectedConditions.elementToBeClickable(
+                By.cssSelector("a.mwe-popups-settings-button")));
         cogSymbol.click();
 
         // Wait for the popup to appear
@@ -128,15 +133,18 @@ public class EnglishHomePageTest extends BaseTest {
         }
 
         // Click Save and Done
-        WebElement saveButton = driver.findElement(By.id("mw-save-button"));
+        WebElement saveButton = wait.until(ExpectedConditions.elementToBeClickable(
+                By.xpath("//button[contains(text(),'Save')]")));
         saveButton.click();
-        WebElement doneButton = driver.findElement(By.id("mw-prefsection-previews-done"));
+
+        WebElement doneButton = wait.until(ExpectedConditions.elementToBeClickable(
+                By.xpath("//button[contains(text(),'Done')]")));
         doneButton.click();
 
-        // Rehover over previous linked text to confirm page preview is disabled
-        actions.moveToElement(linkedText).perform();
-        Assert.assertFalse(driver.findElements(By.className("page-preview")).isEmpty(),
-                "Page preview is still enabled");
+        // Confirm page preview is disabled (edit page preview setting shows at bottom of page)
+        WebElement editPreviewSettings = wait.until(ExpectedConditions.presenceOfElementLocated(
+                By.xpath("//a[text()='Edit preview settings']")));
+        Assert.assertTrue(editPreviewSettings.isDisplayed(), "Page previews should now be disabled.");
     }
 
     //	2.3 - Enabling Page Previews
@@ -147,7 +155,7 @@ public class EnglishHomePageTest extends BaseTest {
     //		→ Verify the option in the footer has disappeared
     //		→ Rehover over previous linked text to confirm page preview is enabled (showing up)
     @Test(priority = 3)
-    public void enablePagePreview(){
+    public void enablePagePreview() throws InterruptedException {
 
         // Scroll to the bottom of the home page
         JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -158,24 +166,43 @@ public class EnglishHomePageTest extends BaseTest {
         editPreviewSettings.click();
 
         // Check the box in the popup
-        WebElement checkbox = driver.findElement(By.id("mw-prefsection-previews"));
+        WebElement checkbox = driver.findElement(By.id("mwe-popups-settings-page"));
         if (!checkbox.isSelected()) {
             checkbox.click();
         }
 
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+
         // Click Save
-        WebElement saveButton = driver.findElement(By.id("mw-save-button"));
+        WebElement saveButton = wait.until(ExpectedConditions.elementToBeClickable(
+                By.xpath("//button[contains(text(),'Save')]")));
         saveButton.click();
 
-        // Verify the option in the footer has disappeared
-        Assert.assertFalse(driver.findElements(By.linkText("Edit preview settings")).isEmpty(),
-                "Edit preview settings option is still visible");
+        // Scroll to top and wait a bit
+        js.executeScript("window.scrollTo(0, 0)");
+        Thread.sleep(2000); // wait for listeners to be reattached
 
-        // Rehover over previous linked text to confirm page preview is enabled
+        // Hover over the Pope Francis link again
+        WebElement linkedText = wait.until(ExpectedConditions.presenceOfElementLocated(
+                By.xpath("//a[@href='/wiki/Pope_Francis']")));
+
+        // Scroll it into view
+        js.executeScript("arguments[0].scrollIntoView({block: 'center'});", linkedText);
+
+        // Perform hover with slight offset
         Actions actions = new Actions(driver);
-        WebElement linkedText = driver.findElement(By.xpath("//a[@href='/wiki/Pope_Francis']"));
-        actions.moveToElement(linkedText).perform();
-        Assert.assertFalse(driver.findElements(By.className("page-preview")).isEmpty(), "Page preview is not enabled");
+        actions.moveToElement(linkedText, 2, 2).perform();
+
+        // Wait for the preview popup
+        wait.until(ExpectedConditions.visibilityOfElementLocated(
+                By.cssSelector("div.mwe-popups-container")
+        ));
+
+        // Confirm cog symbol appears (optional, additional verification)
+        WebElement cogSymbol = wait.until(ExpectedConditions.visibilityOfElementLocated(
+                By.cssSelector("a.mwe-popups-settings-button")
+        ));
+        Assert.assertTrue(cogSymbol.isDisplayed(), "Page preview should be active after enabling.");
     }
 
     //	2.4 - Image Download
