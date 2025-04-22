@@ -72,6 +72,8 @@ public class LoginTest extends BaseTest{
         WebElement password = driver.findElement(By.id("wpPassword1"));
 
         // Enter valid username and password
+        username.clear();
+        password.clear();
         username.sendKeys(validUsername);
         password.sendKeys(validPassword);
 
