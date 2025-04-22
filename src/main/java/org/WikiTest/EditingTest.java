@@ -1,8 +1,9 @@
 package org.WikiTest;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.Test;
 
-public class EditingTest {
+public class EditingTest extends BaseTest{
 
 // 5.1 - Login Editing Confirmation
     @Test(priority = 1)
@@ -27,6 +28,11 @@ public class EditingTest {
 // 5.5 - Visual Editor
     @Test(priority = 5)
     public void visualEditor() {
+    }
+
+    @AfterClass
+    public void afterClass() {
+        driver.close();
     }
 
 }

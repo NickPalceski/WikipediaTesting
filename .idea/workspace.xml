@@ -4,10 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="002edb94-6314-4b99-b0b1-f5508f15807e" name="Changes" comment="Login testing and english home page should mostly be working now. Cog settings button for page previews is unable to locate.">
+    <list default="true" id="002edb94-6314-4b99-b0b1-f5508f15807e" name="Changes" comment="English home page testing now functioning as intended.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/WikiTest/AccessibilityTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/WikiTest/AccessibilityTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/WikiTest/ArticleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/WikiTest/ArticleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/WikiTest/EditingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/WikiTest/EditingTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/WikiTest/EnglishHomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/WikiTest/EnglishHomePageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/WikiTest/EnglishHomePageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/WikiTest/EnglishHomePageTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/WikiTest/HistoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/WikiTest/HistoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/WikiTest/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/WikiTest/LoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/WikiTest/MiscellaneousTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/WikiTest/MiscellaneousTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/WikiTest/PreferencesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/WikiTest/PreferencesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/WikiTest/AccessibilityTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/WikiTest/AccessibilityTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/WikiTest/ArticleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/WikiTest/ArticleTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/WikiTest/EditingTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/WikiTest/EditingTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/WikiTest/HistoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/WikiTest/HistoryTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/WikiTest/MiscellaneousTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/WikiTest/MiscellaneousTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/WikiTest/PreferencesTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/WikiTest/PreferencesTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +41,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -86,7 +100,7 @@
       <recent name="$PROJECT_DIR$/src/main/java/org/WikiTest" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.EnglishHomePageTest">
+  <component name="RunManager" selected="TestNG.C:/Users/nicho/OneDrive/Desktop/Github Repos/WikipediaTesting/testng.xml">
     <configuration name="C:/Users/nicho/OneDrive/Desktop/Github Repos/WikipediaTesting/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="WikipediaTesting" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
@@ -169,11 +183,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Users/nicho/OneDrive/Desktop/Github Repos/WikipediaTesting/testng.xml" />
         <item itemvalue="TestNG.EnglishHomePageTest" />
         <item itemvalue="TestNG.EnglishHomePageTest.disablePagePreview" />
         <item itemvalue="TestNG.EnglishHomePageTest.imageDownload" />
         <item itemvalue="TestNG.LoginTest" />
-        <item itemvalue="TestNG.C:/Users/nicho/OneDrive/Desktop/Github Repos/WikipediaTesting/testng.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -204,7 +218,7 @@
       <workItem from="1744929976666" duration="2657000" />
       <workItem from="1745100135878" duration="2936000" />
       <workItem from="1745328327036" duration="7673000" />
-      <workItem from="1745336785327" duration="3521000" />
+      <workItem from="1745336785327" duration="5820000" />
     </task>
     <task id="LOCAL-00001" summary="First commit, yay!">
       <option name="closed" value="true" />
@@ -286,7 +300,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745336601269</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="English home page testing now functioning as intended.">
+      <option name="closed" value="true" />
+      <created>1745340400996</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1745340400996</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -316,6 +338,7 @@
     <MESSAGE value="Transferred Connor's classes to scope of project and fixed inconsistencies." />
     <MESSAGE value="English home page testing done (needs to be verified/ran)." />
     <MESSAGE value="Login testing and english home page should mostly be working now. Cog settings button for page previews is unable to locate." />
-    <option name="LAST_COMMIT_MESSAGE" value="Login testing and english home page should mostly be working now. Cog settings button for page previews is unable to locate." />
+    <MESSAGE value="English home page testing now functioning as intended." />
+    <option name="LAST_COMMIT_MESSAGE" value="English home page testing now functioning as intended." />
   </component>
 </project>

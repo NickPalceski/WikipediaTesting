@@ -4,7 +4,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -14,6 +16,7 @@ public class MiscellaneousTest extends BaseTest {
     public void beforeClass8() {
 
         System.out.println("(Before Class) Preparing MiscellaneousTest testing...");
+        driver = new FirefoxDriver();
         driver.get("https://en.wikipedia.org/wiki/Main_Page");
 
     }
@@ -269,6 +272,11 @@ public class MiscellaneousTest extends BaseTest {
         driver.navigate().back();
         Thread.sleep(2000);
 
+    }
+
+    @AfterClass
+    public void afterClass() {
+        driver.close();
     }
 
 }

@@ -6,6 +6,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -179,8 +180,10 @@ public class LoginTest extends BaseTest{
         WebElement loginButton = driver.findElement(By.id("wpLoginAttempt"));
         loginButton.click();
 
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+
         //verify that the user is logged in
-        WebElement userSpan = driver.findElement(By.xpath("//span[text()='SoftwareTestingTest']"));
+        WebElement userSpan = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[text()='SoftwareTestingTest']")));
         Assert.assertTrue(userSpan.isDisplayed(), "Failed to login.");
 
         //Reload Wikipedia
@@ -195,4 +198,8 @@ public class LoginTest extends BaseTest{
 
     }
 
+    @AfterClass
+    public void afterClass() {
+        driver.close();
+    }
 }

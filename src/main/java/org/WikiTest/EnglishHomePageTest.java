@@ -8,6 +8,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -298,4 +299,8 @@ public class EnglishHomePageTest extends BaseTest {
         Assert.assertTrue(downloadedFile.exists(), "PDF file was not downloaded successfully");
     }
 
+    @AfterClass
+    public void afterClass() {
+        driver.close();
+    }
 }

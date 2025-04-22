@@ -4,9 +4,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -15,6 +17,7 @@ public class HistoryTest extends BaseTest {
     @BeforeClass
     public void beforeClass7() {
         System.out.println("(Before Class) Preparing HistoryTest testing...");
+        driver = new FirefoxDriver();
         driver.get("https://en.wikipedia.org/wiki/Florida");
     }
 
@@ -264,5 +267,10 @@ public class HistoryTest extends BaseTest {
 
         driver.findElement(By.className("clear-pages")).click();
         Thread.sleep(3000);
+    }
+
+    @AfterClass
+    public void afterClass() {
+        driver.close();
     }
 }

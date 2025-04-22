@@ -3,7 +3,9 @@ package org.WikiTest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -14,6 +16,7 @@ public class PreferencesTest extends BaseTest{
     @BeforeClass
     void classSetup() throws InterruptedException{
         scroll = (JavascriptExecutor) driver;
+        driver = new FirefoxDriver();
         driver.get("https://en.wikipedia.org/wiki/Main_Page");
         Thread.sleep(1000);
         driver.findElement(By.id("pt-login-2")).click();
@@ -233,4 +236,8 @@ public class PreferencesTest extends BaseTest{
         Thread.sleep(1000);
     }
 
+    @AfterClass
+    public void afterClass() {
+        driver.close();
+    }
 }

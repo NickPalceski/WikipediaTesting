@@ -1,9 +1,14 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 <suite name="WikipediaTestSuite">
-    <test name="HomepageAndLoginTests">
+    <test name="WikipediaTesting">
         <classes>
             <class name="org.WikiTest.LoginTest"/>
             <class name="org.WikiTest.EnglishHomePageTest"/>
+            <class name="org.WikiTest.ArticleTest"/>
+            <class name="org.WikiTest.PreferencesTest"/>
+            <class name="org.WikiTest.AccessibilityTest"/>
+            <class name="org.WikiTest.HistoryTest"/>
+            <class name="org.WikiTest.MiscellaneousTest"/>
         </classes>
     </test>
 </suite>

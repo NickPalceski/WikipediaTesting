@@ -2,7 +2,9 @@ package org.WikiTest;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -10,6 +12,7 @@ public class ArticleTest extends BaseTest{
 
     @BeforeClass
     void classSetup(){
+        driver = new FirefoxDriver();
         driver.get("https://www.wikipedia.org/");
 
     }
@@ -94,4 +97,8 @@ public class ArticleTest extends BaseTest{
         Thread.sleep(2000);
     }
 
+    @AfterClass
+    public void afterClass() {
+        driver.close();
+    }
 }
