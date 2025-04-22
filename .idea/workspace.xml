@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="002edb94-6314-4b99-b0b1-f5508f15807e" name="Changes" comment="updated changes">
+    <list default="true" id="002edb94-6314-4b99-b0b1-f5508f15807e" name="Changes" comment="Removed unnecessary driver in accessibility class.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/WikiTest/LoginTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/WikiTest/LoginTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/WikiTest/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/WikiTest/LoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/WikiTest/AccessibilityTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/WikiTest/AccessibilityTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/WikiTest/ArticleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/WikiTest/ArticleTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +87,7 @@
       <recent name="$PROJECT_DIR$/src/main/java/org/WikiTest" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/nicho/OneDrive/Desktop/Github Repos/WikipediaTesting/testng.xml">
+  <component name="RunManager" selected="TestNG.LoginTest">
     <configuration name="C:/Users/nicho/OneDrive/Desktop/Github Repos/WikipediaTesting/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="WikipediaTesting" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
@@ -168,8 +170,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.C:/Users/nicho/OneDrive/Desktop/Github Repos/WikipediaTesting/testng.xml" />
         <item itemvalue="TestNG.LoginTest" />
+        <item itemvalue="TestNG.C:/Users/nicho/OneDrive/Desktop/Github Repos/WikipediaTesting/testng.xml" />
         <item itemvalue="TestNG.EnglishHomePageTest" />
         <item itemvalue="TestNG.EnglishHomePageTest.disablePagePreview" />
         <item itemvalue="TestNG.EnglishHomePageTest.imageDownload" />
@@ -301,7 +303,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745344961868</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Removed unnecessary driver in accessibility class.">
+      <option name="closed" value="true" />
+      <created>1745363757259</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1745363757259</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -333,6 +343,7 @@
     <MESSAGE value="Login testing and english home page should mostly be working now. Cog settings button for page previews is unable to locate." />
     <MESSAGE value="English home page testing now functioning as intended." />
     <MESSAGE value="updated changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated changes" />
+    <MESSAGE value="Removed unnecessary driver in accessibility class." />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed unnecessary driver in accessibility class." />
   </component>
 </project>

@@ -205,7 +205,8 @@ public class LoginTest extends BaseTest{
     }
 
     @AfterClass
-    public void afterClass() {
+    public void afterClass(){
         driver.close();
+
     }
 }

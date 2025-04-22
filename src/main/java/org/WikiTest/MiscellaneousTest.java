@@ -273,10 +273,6 @@ public class MiscellaneousTest extends BaseTest {
         Thread.sleep(2000);
 
     }
-
-    @AfterClass
-    public void afterClass() {
-        driver.close();
-    }
+    //No AfterClass method here (last test class), breakDown will take care of the driver...
 
 }
