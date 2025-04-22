@@ -30,7 +30,10 @@ public class AccessibilityTest {
     // Before Test
     @BeforeTest
     public void beforeTest() {
-        System.setProperty("webdriver.firefox.driver", "E:\\Coding Software\\Intellj\\Firefox Driver\\geckodriver.exe");
+        // This might not be necessary
+        // System.setProperty("webdriver.firefox.driver", "E:\\Coding Software\\Intellj\\Firefox Driver\\geckodriver.exe");
+        //
+        //
         driver = new FirefoxDriver();
         action = new Actions(driver);
         driver.get("https://en.wikipedia.org/wiki/Japan");
