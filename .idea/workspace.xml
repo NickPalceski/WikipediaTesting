@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="002edb94-6314-4b99-b0b1-f5508f15807e" name="Changes" comment="updated changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/WikiTest/LoginTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/WikiTest/LoginTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +85,7 @@
       <recent name="$PROJECT_DIR$/src/main/java/org/WikiTest" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.LoginTest">
+  <component name="RunManager" selected="TestNG.C:/Users/nicho/OneDrive/Desktop/Github Repos/WikipediaTesting/testng.xml">
     <configuration name="C:/Users/nicho/OneDrive/Desktop/Github Repos/WikipediaTesting/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="WikipediaTesting" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
@@ -167,8 +168,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.LoginTest" />
         <item itemvalue="TestNG.C:/Users/nicho/OneDrive/Desktop/Github Repos/WikipediaTesting/testng.xml" />
+        <item itemvalue="TestNG.LoginTest" />
         <item itemvalue="TestNG.EnglishHomePageTest" />
         <item itemvalue="TestNG.EnglishHomePageTest.disablePagePreview" />
         <item itemvalue="TestNG.EnglishHomePageTest.imageDownload" />

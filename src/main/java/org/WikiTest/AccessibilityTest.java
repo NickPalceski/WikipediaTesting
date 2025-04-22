@@ -10,6 +10,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.Dimension;
 
 // testng
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import org.testng.Assert;
@@ -21,15 +22,14 @@ import org.testng.Assert;
 // namely time to explain in-class.
 public class AccessibilityTest extends BaseTest {
     // Initialized variables
-    WebDriver driver;
     WebElement element;
     Actions action;
     String actual;
 
 
     // Before Test
-    @BeforeTest
-    public void beforeTest() {
+    @BeforeClass
+    public void beforeClass() {
 
         System.out.println("(Before Class) Preparing AccessibilityTest testing...");
         driver = new FirefoxDriver();

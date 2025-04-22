@@ -1,0 +1,99 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"002edb94-6314-4b99-b0b1-f5508f15807e\" name=\"Changes\" comment=\"English home page testing done (needs to be verified/ran).\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/org/WikiTest/BaseTest.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/org/WikiTest/BaseTest.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/org/WikiTest/EnglishHomePageTest.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/org/WikiTest/EnglishHomePageTest.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/org/WikiTest/LoginTest.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/org/WikiTest/LoginTest.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/testng.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/testng.xml\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"main\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;NickPalceski&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">{\r\n  &quot;selectedUrlAndAccountId&quot;: {\r\n    &quot;url&quot;: &quot;https://github.com/NickPalceski/WikipediaTesting.git&quot;,\r\n    &quot;accountId&quot;: &quot;c9d702ea-ba08-4f33-b21d-5ec4fdd6c74f&quot;\r\n  }\r\n}</component>\r\n  <component name=\"ProblemsViewState\">\r\n    <hideBySeverity>\r\n      <option value=\"200\" />\r\n    </hideBySeverity>\r\n    <option name=\"selectedTabId\" value=\"CurrentFile\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 0\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2v3PEchSZyu73qKlpJu9GinNPVy\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"RunOnceActivity.git.unshallow\": \"true\",\r\n    \"TestNG.C:/Users/nicho/OneDrive/Desktop/Github Repos/WikipediaTesting/testng.xml.executor\": \"Run\",\r\n    \"git-widget-placeholder\": \"main\",\r\n    \"ignore.virus.scanning.warn.message\": \"true\",\r\n    \"kotlin-language-version-configured\": \"true\",\r\n    \"last_opened_file_path\": \"C:/Users/nicho/OneDrive/Desktop/Github Repos/WikipediaTesting\",\r\n    \"node.js.detected.package.eslint\": \"true\",\r\n    \"node.js.detected.package.tslint\": \"true\",\r\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\r\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\r\n    \"nodejs_package_manager_path\": \"npm\",\r\n    \"project.structure.last.edited\": \"Project\",\r\n    \"project.structure.proportion\": \"0.15\",\r\n    \"project.structure.side.proportion\": \"0.2\",\r\n    \"settings.editor.selected.configurable\": \"reference.settings.project.maven.repository.indices\",\r\n    \"vue.rearranger.settings.migration\": \"true\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RunManager\">\r\n    <configuration name=\"C:/Users/nicho/OneDrive/Desktop/Github Repos/WikipediaTesting/testng.xml\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"WikipediaTesting\" />\r\n      <option name=\"SUITE_NAME\" value=\"$PROJECT_DIR$/testng.xml\" />\r\n      <option name=\"TEST_OBJECT\" value=\"SUITE\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"TestNG.C:/Users/nicho/OneDrive/Desktop/Github Repos/WikipediaTesting/testng.xml\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.24978.46\" />\r\n        <option value=\"bundled-js-predefined-d6986cc7102b-76f8388c3a79-JavaScript-IU-243.24978.46\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"002edb94-6314-4b99-b0b1-f5508f15807e\" name=\"Changes\" comment=\"\" />\r\n      <created>1743370674543</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1743370674543</updated>\r\n      <workItem from=\"1743370676716\" duration=\"2965000\" />\r\n      <workItem from=\"1743521372160\" duration=\"308000\" />\r\n      <workItem from=\"1743521695850\" duration=\"743000\" />\r\n      <workItem from=\"1743522463376\" duration=\"316000\" />\r\n      <workItem from=\"1743522795008\" duration=\"212000\" />\r\n      <workItem from=\"1743523018543\" duration=\"66000\" />\r\n      <workItem from=\"1743523992015\" duration=\"1844000\" />\r\n      <workItem from=\"1744917113909\" duration=\"2147000\" />\r\n      <workItem from=\"1744929976666\" duration=\"2657000\" />\r\n      <workItem from=\"1745100135878\" duration=\"2936000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"First commit, yay!\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1743372030382</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1743372030382</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Added testng xml file template\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1743374460058</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1743374460058</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"test commit\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1743522589892</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1743522589892</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"Added src files to project structure modules.\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1743524289002</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1743524289002</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"Changed class names and started general testing outline (referenced in Teams)\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1743525814378</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1743525814378</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"Finished login test class, needs to be verified (ran).\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744933599766</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744933599766</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"Transferred Connor's classes to scope of project and fixed inconsistencies.\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745258266046</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745258266046</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"English home page testing done (needs to be verified/ran).\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745260283923</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745260283923</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"9\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"UnknownFeatures\">\r\n    <option featureType=\"dependencySupport\" implementationName=\"java:org.seleniumhq.selenium:selenium-java\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"First commit, yay!\" />\r\n    <MESSAGE value=\"Added testng xml file template\" />\r\n    <MESSAGE value=\"test commit\" />\r\n    <MESSAGE value=\"Added src files to project structure modules.\" />\r\n    <MESSAGE value=\"Changed class names and started general testing outline (referenced in Teams)\" />\r\n    <MESSAGE value=\"Finished login test class, needs to be verified (ran).\" />\r\n    <MESSAGE value=\"Transferred Connor's classes to scope of project and fixed inconsistencies.\" />\r\n    <MESSAGE value=\"English home page testing done (needs to be verified/ran).\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"English home page testing done (needs to be verified/ran).\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 1b40bd660c2dcff89e963355dfbf9b18b0160c62)
++++ b/.idea/workspace.xml	(date 1745362432305)
+@@ -4,12 +4,8 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="002edb94-6314-4b99-b0b1-f5508f15807e" name="Changes" comment="English home page testing done (needs to be verified/ran).">
++    <list default="true" id="002edb94-6314-4b99-b0b1-f5508f15807e" name="Changes" comment="Tweaked and fixed some stuff but still needs a lot of looking at.">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/org/WikiTest/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/WikiTest/BaseTest.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/org/WikiTest/EnglishHomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/WikiTest/EnglishHomePageTest.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/org/WikiTest/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/WikiTest/LoginTest.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -58,27 +54,27 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "RunOnceActivity.git.unshallow": "true",
+-    "TestNG.C:/Users/nicho/OneDrive/Desktop/Github Repos/WikipediaTesting/testng.xml.executor": "Run",
+-    "git-widget-placeholder": "main",
+-    "ignore.virus.scanning.warn.message": "true",
+-    "kotlin-language-version-configured": "true",
+-    "last_opened_file_path": "C:/Users/nicho/OneDrive/Desktop/Github Repos/WikipediaTesting",
+-    "node.js.detected.package.eslint": "true",
+-    "node.js.detected.package.tslint": "true",
+-    "node.js.selected.package.eslint": "(autodetect)",
+-    "node.js.selected.package.tslint": "(autodetect)",
+-    "nodejs_package_manager_path": "npm",
+-    "project.structure.last.edited": "Project",
+-    "project.structure.proportion": "0.15",
+-    "project.structure.side.proportion": "0.2",
+-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+-    "vue.rearranger.settings.migration": "true"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
++    &quot;TestNG.C:/Users/nicho/OneDrive/Desktop/Github Repos/WikipediaTesting/testng.xml.executor&quot;: &quot;Run&quot;,
++    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
++    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
++    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
++    &quot;last_opened_file_path&quot;: &quot;C:/Users/nicho/OneDrive/Desktop/Github Repos/WikipediaTesting&quot;,
++    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
++    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
++    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
++    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
++    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
++    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
++    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
++    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
++    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
++    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="RunManager">
+     <configuration name="C:/Users/nicho/OneDrive/Desktop/Github Repos/WikipediaTesting/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+       <module name="WikipediaTesting" />
+@@ -187,7 +183,15 @@
+       <option name="project" value="LOCAL" />
+       <updated>1745260283923</updated>
+     </task>
+-    <option name="localTasksCounter" value="9" />
++    <task id="LOCAL-00009" summary="Tweaked and fixed some stuff but still needs a lot of looking at.">
++      <option name="closed" value="true" />
++      <created>1745299830512</created>
++      <option name="number" value="00009" />
++      <option name="presentableId" value="LOCAL-00009" />
++      <option name="project" value="LOCAL" />
++      <updated>1745299830512</updated>
++    </task>
++    <option name="localTasksCounter" value="10" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -216,6 +220,7 @@
+     <MESSAGE value="Finished login test class, needs to be verified (ran)." />
+     <MESSAGE value="Transferred Connor's classes to scope of project and fixed inconsistencies." />
+     <MESSAGE value="English home page testing done (needs to be verified/ran)." />
+-    <option name="LAST_COMMIT_MESSAGE" value="English home page testing done (needs to be verified/ran)." />
++    <MESSAGE value="Tweaked and fixed some stuff but still needs a lot of looking at." />
++    <option name="LAST_COMMIT_MESSAGE" value="Tweaked and fixed some stuff but still needs a lot of looking at." />
+   </component>
+ </project>
+\ No newline at end of file
