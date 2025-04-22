@@ -105,13 +105,16 @@ public class LoginTest extends BaseTest{
 
         //Logout of account
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        WebElement logoutButton = wait.until(ExpectedConditions.elementToBeClickable(
+        WebElement logoutButton = wait.until(ExpectedConditions.visibilityOfElementLocated(
                 By.xpath("//a[contains(@href, 'Special:UserLogout') and .//span[text()='Log out']]")
         ));
         logoutButton.click();
 
+
+
         // Verify that the user is logged out
-        WebElement loginLink = driver.findElement(By.xpath("//a[contains(@title, \"You're encouraged to log in\")]"));
+        WebElement loginLink = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(
+                "//a[contains(@title, \"You're encouraged to log in\")]")));
         Assert.assertTrue(loginLink.isDisplayed(), "User is not logged out.");
     }
 
@@ -169,6 +172,9 @@ public class LoginTest extends BaseTest{
         WebElement password = driver.findElement(By.id("wpPassword1"));
 
         // Enter valid username and password
+        username.clear();
+        password.clear();
+
         username.sendKeys(validUsername);
         password.sendKeys(validPassword);
 

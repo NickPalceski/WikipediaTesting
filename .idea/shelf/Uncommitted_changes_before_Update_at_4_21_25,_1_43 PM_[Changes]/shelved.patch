@@ -1,0 +1,67 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"002edb94-6314-4b99-b0b1-f5508f15807e\" name=\"Changes\" comment=\"Changed class names and started general testing outline (referenced in Teams)\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/misc.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/misc.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/org/WikiTest/LoginTest.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/org/WikiTest/LoginTest.java\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Class\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"GitHubPullRequestSearchHistory\">{\n  &quot;lastFilter&quot;: {\n    &quot;state&quot;: &quot;OPEN&quot;,\n    &quot;assignee&quot;: &quot;NickPalceski&quot;\n  }\n}</component>\n  <component name=\"GithubPullRequestsUISettings\">{\n  &quot;selectedUrlAndAccountId&quot;: {\n    &quot;url&quot;: &quot;https://github.com/NickPalceski/WikipediaTesting.git&quot;,\n    &quot;accountId&quot;: &quot;b7c3c926-8e0f-4b59-9cd5-3dc9cf5d9b55&quot;\n  }\n}</component>\n  <component name=\"ProblemsViewState\">\n    <option name=\"selectedTabId\" value=\"CurrentFile\" />\n  </component>\n  <component name=\"ProjectColorInfo\">{\n  &quot;associatedIndex&quot;: 0\n}</component>\n  <component name=\"ProjectId\" id=\"2v3PEchSZyu73qKlpJu9GinNPVy\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">{\n  &quot;keyToString&quot;: {\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\n    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,\n    &quot;git-widget-placeholder&quot;: &quot;main&quot;,\n    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,\n    &quot;last_opened_file_path&quot;: &quot;/Users/nickpalceski/Desktop/Github Repos/WikipediaTesting&quot;,\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,\n    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,\n    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,\n    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,\n    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\n  }\n}</component>\n  <component name=\"SharedIndexes\">\n    <attachedChunks>\n      <set>\n        <option value=\"bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.22562.218\" />\n        <option value=\"bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-IU-243.22562.218\" />\n      </set>\n    </attachedChunks>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"002edb94-6314-4b99-b0b1-f5508f15807e\" name=\"Changes\" comment=\"\" />\n      <created>1743370674543</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1743370674543</updated>\n      <workItem from=\"1743370676716\" duration=\"2965000\" />\n      <workItem from=\"1743521372160\" duration=\"308000\" />\n      <workItem from=\"1743521695850\" duration=\"743000\" />\n      <workItem from=\"1743522463376\" duration=\"316000\" />\n      <workItem from=\"1743522795008\" duration=\"212000\" />\n      <workItem from=\"1743523018543\" duration=\"66000\" />\n      <workItem from=\"1743523992015\" duration=\"1844000\" />\n      <workItem from=\"1744917113909\" duration=\"2147000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"First commit, yay!\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1743372030382</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1743372030382</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"Added testng xml file template\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1743374460058</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1743374460058</updated>\n    </task>\n    <task id=\"LOCAL-00003\" summary=\"test commit\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1743522589892</created>\n      <option name=\"number\" value=\"00003\" />\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1743522589892</updated>\n    </task>\n    <task id=\"LOCAL-00004\" summary=\"Added src files to project structure modules.\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1743524289002</created>\n      <option name=\"number\" value=\"00004\" />\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1743524289002</updated>\n    </task>\n    <task id=\"LOCAL-00005\" summary=\"Changed class names and started general testing outline (referenced in Teams)\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1743525814378</created>\n      <option name=\"number\" value=\"00005\" />\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1743525814378</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"6\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"UnknownFeatures\">\n    <option featureType=\"dependencySupport\" implementationName=\"java:org.seleniumhq.selenium:selenium-java\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"First commit, yay!\" />\n    <MESSAGE value=\"Added testng xml file template\" />\n    <MESSAGE value=\"test commit\" />\n    <MESSAGE value=\"Added src files to project structure modules.\" />\n    <MESSAGE value=\"Changed class names and started general testing outline (referenced in Teams)\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Changed class names and started general testing outline (referenced in Teams)\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision fb83dd2366e3b36ed89a1d225129d65b50a03bbb)
++++ b/.idea/workspace.xml	(date 1744919613866)
+@@ -4,11 +4,7 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="002edb94-6314-4b99-b0b1-f5508f15807e" name="Changes" comment="Changed class names and started general testing outline (referenced in Teams)">
+-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/org/WikiTest/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/WikiTest/LoginTest.java" afterDir="false" />
+-    </list>
++    <list default="true" id="002edb94-6314-4b99-b0b1-f5508f15807e" name="Changes" comment="Started login testing functionality." />
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -23,6 +19,7 @@
+   </component>
+   <component name="Git.Settings">
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
++    <option name="UPDATE_TYPE" value="REBASE" />
+   </component>
+   <component name="GitHubPullRequestSearchHistory">{
+   &quot;lastFilter&quot;: {
+@@ -90,7 +87,7 @@
+       <workItem from="1743522795008" duration="212000" />
+       <workItem from="1743523018543" duration="66000" />
+       <workItem from="1743523992015" duration="1844000" />
+-      <workItem from="1744917113909" duration="2147000" />
++      <workItem from="1744917113909" duration="2498000" />
+     </task>
+     <task id="LOCAL-00001" summary="First commit, yay!">
+       <option name="closed" value="true" />
+@@ -132,7 +129,15 @@
+       <option name="project" value="LOCAL" />
+       <updated>1743525814378</updated>
+     </task>
+-    <option name="localTasksCounter" value="6" />
++    <task id="LOCAL-00006" summary="Started login testing functionality.">
++      <option name="closed" value="true" />
++      <created>1744919471673</created>
++      <option name="number" value="00006" />
++      <option name="presentableId" value="LOCAL-00006" />
++      <option name="project" value="LOCAL" />
++      <updated>1744919471673</updated>
++    </task>
++    <option name="localTasksCounter" value="7" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -158,6 +163,7 @@
+     <MESSAGE value="test commit" />
+     <MESSAGE value="Added src files to project structure modules." />
+     <MESSAGE value="Changed class names and started general testing outline (referenced in Teams)" />
+-    <option name="LAST_COMMIT_MESSAGE" value="Changed class names and started general testing outline (referenced in Teams)" />
++    <MESSAGE value="Started login testing functionality." />
++    <option name="LAST_COMMIT_MESSAGE" value="Started login testing functionality." />
+   </component>
+ </project>
+\ No newline at end of file

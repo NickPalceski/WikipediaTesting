@@ -4,23 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="002edb94-6314-4b99-b0b1-f5508f15807e" name="Changes" comment="English home page testing now functioning as intended.">
+    <list default="true" id="002edb94-6314-4b99-b0b1-f5508f15807e" name="Changes" comment="updated changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/WikiTest/AccessibilityTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/WikiTest/AccessibilityTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/WikiTest/ArticleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/WikiTest/ArticleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/WikiTest/EditingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/WikiTest/EditingTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/WikiTest/EnglishHomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/WikiTest/EnglishHomePageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/WikiTest/HistoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/WikiTest/HistoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/WikiTest/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/WikiTest/LoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/WikiTest/MiscellaneousTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/WikiTest/MiscellaneousTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/WikiTest/PreferencesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/WikiTest/PreferencesTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/WikiTest/AccessibilityTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/WikiTest/AccessibilityTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/WikiTest/ArticleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/WikiTest/ArticleTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/WikiTest/EditingTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/WikiTest/EditingTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/WikiTest/HistoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/WikiTest/HistoryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/WikiTest/MiscellaneousTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/WikiTest/MiscellaneousTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/WikiTest/PreferencesTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/WikiTest/PreferencesTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +26,6 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -70,37 +54,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "TestNG.C:/Users/nicho/OneDrive/Desktop/Github Repos/WikipediaTesting/testng.xml.executor": "Run",
-    "TestNG.EnglishHomePageTest.disablePagePreview.executor": "Run",
-    "TestNG.EnglishHomePageTest.executor": "Run",
-    "TestNG.EnglishHomePageTest.imageDownload.executor": "Run",
-    "TestNG.LoginTest.executor": "Run",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/nicho/OneDrive/Desktop/Github Repos/WikipediaTesting",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;TestNG.C:/Users/nicho/OneDrive/Desktop/Github Repos/WikipediaTesting/testng.xml.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.EnglishHomePageTest.disablePagePreview.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.EnglishHomePageTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.EnglishHomePageTest.imageDownload.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginTest.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/nicho/OneDrive/Desktop/Github Repos/WikipediaTesting&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/org/WikiTest" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/nicho/OneDrive/Desktop/Github Repos/WikipediaTesting/testng.xml">
+  <component name="RunManager" selected="TestNG.LoginTest">
     <configuration name="C:/Users/nicho/OneDrive/Desktop/Github Repos/WikipediaTesting/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="WikipediaTesting" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
@@ -183,11 +167,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.LoginTest" />
         <item itemvalue="TestNG.C:/Users/nicho/OneDrive/Desktop/Github Repos/WikipediaTesting/testng.xml" />
         <item itemvalue="TestNG.EnglishHomePageTest" />
         <item itemvalue="TestNG.EnglishHomePageTest.disablePagePreview" />
         <item itemvalue="TestNG.EnglishHomePageTest.imageDownload" />
-        <item itemvalue="TestNG.LoginTest" />
       </list>
     </recent_temporary>
   </component>
@@ -218,7 +202,7 @@
       <workItem from="1744929976666" duration="2657000" />
       <workItem from="1745100135878" duration="2936000" />
       <workItem from="1745328327036" duration="7673000" />
-      <workItem from="1745336785327" duration="5820000" />
+      <workItem from="1745336785327" duration="7931000" />
     </task>
     <task id="LOCAL-00001" summary="First commit, yay!">
       <option name="closed" value="true" />
@@ -308,7 +292,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745340400996</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="updated changes">
+      <option name="closed" value="true" />
+      <created>1745344961868</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1745344961868</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -339,6 +331,7 @@
     <MESSAGE value="English home page testing done (needs to be verified/ran)." />
     <MESSAGE value="Login testing and english home page should mostly be working now. Cog settings button for page previews is unable to locate." />
     <MESSAGE value="English home page testing now functioning as intended." />
-    <option name="LAST_COMMIT_MESSAGE" value="English home page testing now functioning as intended." />
+    <MESSAGE value="updated changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated changes" />
   </component>
 </project>
