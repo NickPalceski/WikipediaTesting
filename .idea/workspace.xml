@@ -5,11 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="002edb94-6314-4b99-b0b1-f5508f15807e" name="Changes" comment="English home page testing done (needs to be verified/ran).">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/WikiTest/geckodriver-v0.36.0-linux-aarch64.tar.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/WikiTest/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/WikiTest/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/WikiTest/EnglishHomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/WikiTest/EnglishHomePageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/WikiTest/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/WikiTest/LoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/WikiTest/AccessibilityTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/WikiTest/AccessibilityTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/WikiTest/BaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/WikiTest/BaseTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/WikiTest/EnglishHomePageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/WikiTest/EnglishHomePageTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/WikiTest/HistoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/WikiTest/HistoryTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/WikiTest/LoginTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/WikiTest/LoginTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/WikiTest/MiscellaneousTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/WikiTest/MiscellaneousTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,12 +43,12 @@
     &quot;assignee&quot;: &quot;NickPalceski&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/NickPalceski/WikipediaTesting.git&quot;,
-    &quot;accountId&quot;: &quot;c9d702ea-ba08-4f33-b21d-5ec4fdd6c74f&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/NickPalceski/WikipediaTesting.git",
+    "accountId": "b7c3c926-8e0f-4b59-9cd5-3dc9cf5d9b55"
   }
-}</component>
+}]]></component>
   <component name="ProblemsViewState">
     <hideBySeverity>
       <option value="200" />
@@ -63,6 +69,9 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "TestNG.C:/Users/nicho/OneDrive/Desktop/Github Repos/WikipediaTesting/testng.xml.executor": "Run",
+    "TestNG.EnglishHomePageTest.executor": "Run",
+    "TestNG.EnglishHomePageTest.imageDownload.executor": "Run",
+    "TestNG.LoginTest.executor": "Run",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
@@ -79,7 +88,12 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/org/WikiTest" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.EnglishHomePageTest.imageDownload">
     <configuration name="C:/Users/nicho/OneDrive/Desktop/Github Repos/WikipediaTesting/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="WikipediaTesting" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
@@ -90,8 +104,63 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="EnglishHomePageTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="WikipediaTesting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.WikiTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.WikiTest" />
+      <option name="MAIN_CLASS_NAME" value="org.WikiTest.EnglishHomePageTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EnglishHomePageTest.imageDownload" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="WikipediaTesting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.WikiTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.WikiTest" />
+      <option name="MAIN_CLASS_NAME" value="org.WikiTest.EnglishHomePageTest" />
+      <option name="METHOD_NAME" value="imageDownload" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="WikipediaTesting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.WikiTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.WikiTest" />
+      <option name="MAIN_CLASS_NAME" value="org.WikiTest.LoginTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.EnglishHomePageTest.imageDownload" />
+        <item itemvalue="TestNG.EnglishHomePageTest" />
+        <item itemvalue="TestNG.LoginTest" />
         <item itemvalue="TestNG.C:/Users/nicho/OneDrive/Desktop/Github Repos/WikipediaTesting/testng.xml" />
       </list>
     </recent_temporary>
@@ -99,8 +168,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.24978.46" />
-        <option value="bundled-js-predefined-d6986cc7102b-76f8388c3a79-JavaScript-IU-243.24978.46" />
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.22562.218" />
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-IU-243.22562.218" />
       </set>
     </attachedChunks>
   </component>
@@ -122,6 +191,7 @@
       <workItem from="1744917113909" duration="2147000" />
       <workItem from="1744929976666" duration="2657000" />
       <workItem from="1745100135878" duration="2936000" />
+      <workItem from="1745328327036" duration="7420000" />
     </task>
     <task id="LOCAL-00001" summary="First commit, yay!">
       <option name="closed" value="true" />
@@ -187,7 +257,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745260283923</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="English home page testing done (needs to be verified/ran).">
+      <option name="closed" value="true" />
+      <created>1745260399772</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1745260399772</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

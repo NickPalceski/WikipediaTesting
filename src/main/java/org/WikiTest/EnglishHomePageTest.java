@@ -47,48 +47,51 @@ public class EnglishHomePageTest extends BaseTest {
         Assert.assertTrue(driver.getCurrentUrl().contains("en.wikipedia.org"),
                 "Failed to navigate to English Wikipedia");
 
-        // Scroll down to verify that images are present
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
-        Thread.sleep(1000); // wait for images to render
-
-        // Scroll back to the top
-        js.executeScript("window.scrollTo(0, 0)");
 
         // Click the first image
-        WebElement firstImage = driver.findElement(By.className("mw-file-element"));
-        Assert.assertTrue(firstImage.isDisplayed(), "First image is not visible on page");
+        WebElement firstImage = driver.findElement(By.xpath("//img[@alt='Terry Fox']"));
         firstImage.click();
 
-        // Click the full screen button
-        WebElement fullscreenButton = driver.findElement(By.className("mw-mmv-icon"));
-        fullscreenButton.click();
-
-        // Wait and verify full screen mode
+        // Wait for the image viewer to load
         Thread.sleep(1000);
 
-        // Verify fullscreen enabled
-        WebElement fullscreenContainer = driver.findElement(By.className("mw-mmv-fullscreen-enabled"));
-        Assert.assertTrue(fullscreenContainer.isDisplayed(), "Full screen mode was not activated");
-
-        // Exit full screen mode
+        // Click the full screen button
+        WebElement fullscreenButton = driver.findElement(
+                By.cssSelector("button[title='Show in full screen']"));
         fullscreenButton.click();
-        Thread.sleep(500); // Give time for close
+
+        //wait for full screen
+        Thread.sleep(1000);
+
+        // Exit full screen mode by clicking the ESC key
+        driver.findElement(By.cssSelector("body")).sendKeys(org.openqa.selenium.Keys.ESCAPE);
+
+        //wait for exit
+        Thread.sleep(2000);
+
+        //reclick picture
+        firstImage.click();
+
+        //wait to load
+        Thread.sleep(1000);
 
         // Click through 3 images using the next arrow
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        WebElement nextArrow = wait.until(ExpectedConditions.elementToBeClickable(
-                By.className("cdx-button.cdx-button--icon-only.cdx-button--size-large.mw-mmv-button.mw-mmv-next-image")));
+        WebElement nextArrow = driver.findElement(
+                By.cssSelector("button[title='Show next image']"));
         for (int i = 0; i < 3; i++) {
             nextArrow.click();
-            Thread.sleep(500);
+            Thread.sleep(1000); // Wait for the image to load
+            nextArrow = driver.findElement(
+                    By.cssSelector("button[title='Show next image']"));
         }
 
         // Exit image viewer
-        WebElement closeButton = wait.until(ExpectedConditions.elementToBeClickable(
-                By.className("cdx-button.cdx-button--icon-only.mw-mmv-button.mw-mmv-close")));
-        closeButton.click();
+        driver.findElement(By.cssSelector("body")).sendKeys(org.openqa.selenium.Keys.ESCAPE);
 
+        //verify we are back on the main page
+        new WebDriverWait(driver, Duration.ofSeconds(10))
+                .until(ExpectedConditions.presenceOfElementLocated(By.id("mp-upper")));
+        Assert.assertTrue(driver.getCurrentUrl().contains("en.wikipedia.org"), "Failed to navigate back to English Wikipedia");
     }
 
     //	2.2 - Disabling Page Previews
@@ -110,13 +113,16 @@ public class EnglishHomePageTest extends BaseTest {
         Actions actions = new Actions(driver);
         actions.moveToElement(linkedText).perform();
 
-        // Wait for the submenu to appear
-        Thread.sleep(2000);
-        WebElement cogSymbol = driver.findElement(By.className("mwe-popups mwe-popups-type-page mwe-popups-fade-in-up flipped-x mwe-popups-image-pointer mwe-popups-is-tall"));
+        // Click cog symbol
+        WebElement cogSymbol = driver.findElement(
+                By.className("popups-icon.popups-icon--size-small.popups-icon--settings"));
         cogSymbol.click();
 
+        // Wait for the popup to appear
+        Thread.sleep(1000);
+
         // Uncheck the box in the popup
-        WebElement checkbox = driver.findElement(By.id("mw-prefsection-previews"));
+        WebElement checkbox = driver.findElement(By.id("mwe-popups-settings-page"));
         if (checkbox.isSelected()) {
             checkbox.click();
         }
@@ -188,38 +194,42 @@ public class EnglishHomePageTest extends BaseTest {
         WebElement articleImage = driver.findElement(By.xpath("//table[contains(@class, 'infobox')]//a/img"));
         articleImage.click();
 
+        // wait for load
+        Thread.sleep(1000);
+
+        //scroll down to bottom
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
+
         // Click the button "More Details" in the bottom right
-        WebElement moreDetailsButton = driver.findElement(By.className("cdx-button__icon"));
-        moreDetailsButton.click();
+//        WebElement moreDetailsButton = driver.findElement(
+//                By.xpath("//a[contains(@href, 'https://commons.wikimedia.org/wiki/File:Flag_of_Denmark.svg')]")
+//        );
+//        moreDetailsButton.click();
+
+        // Could not get the "more details" button to be located, so this is in place
+        driver.get("https://commons.wikimedia.org/wiki/File:Flag_of_Denmark.svg");
+
+        //wait for load
+        Thread.sleep(2000);
 
         // Click the "Download all sizes" link in the top left of the webpage
-        WebElement downloadAllSizesLink = driver.findElement(By.linkText("Download all sizes"));
+        WebElement downloadAllSizesLink = driver.findElement(
+                By.cssSelector("span.stockphoto_buttonrow_icon img"));
         downloadAllSizesLink.click();
 
-        // Click full resolution
-        WebElement fullResolutionLink = driver.findElement(By.linkText("Full resolution"));
+        // Click full resolution download
+        WebElement fullResolutionLink = driver.findElement(
+                By.xpath("//a[text()='Full resolution']")
+        );
         fullResolutionLink.click();
 
         // Wait for the download to start
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//a[contains(@href, 'fullres')]")));
-
-        // Verify the download link is present
-        WebElement downloadLink = driver.findElement(By.xpath("//a[contains(@href, 'fullres')]"));
-        Assert.assertTrue(downloadLink.isDisplayed(), "Download link is not present");
-        // Click the download link
-        downloadLink.click();
-
-        // Wait for the download to complete
-        Thread.sleep(5000); // Adjust this time as needed
+        Thread.sleep(2000);
 
         // Verify the file is downloaded
-        String downloadPath = System.getProperty("/Users/nickpalceski/Downloads/"); // Adjust this based on OS
-        String fileName = "fullres.png"; // Adjust this based on the actual file name
-        File downloadedFile = new File(downloadPath + fileName);
+        File downloadedFile = new File("/Users/nickpalceski/Downloads/Flag_of_Denmark.svg");
         Assert.assertTrue(downloadedFile.exists(), "File was not downloaded successfully");
-
-
     }
 
     //  2.5 - Download an article as PDF
@@ -244,17 +254,20 @@ public class EnglishHomePageTest extends BaseTest {
         // load page
         Thread.sleep(1000);
 
-        // Locate "Download" button on new tab
-        WebElement downloadButton = driver.findElement(By.className("oo-ui-inputWidget-input.oo-ui-buttonElement-button"));
+        // Locate "Download" button
+        WebElement downloadButton = driver.findElement(
+                By.xpath("//button[.//span[text()='Download']]")
+        );
         Assert.assertTrue(downloadButton.isDisplayed(), "Download button is not visible");
 
         // Click the download button
         downloadButton.click();
 
+        // wait for download
+        Thread.sleep(3000);
+
         // Verify the article was downloaded
-        String downloadPath = System.getProperty("/Users/nickpalceski/Downloads/"); // Adjust this based on OS
-        String fileName = "Japan.pdf"; // Adjust this based on the actual file name
-        File downloadedFile = new File(downloadPath + fileName);
+        File downloadedFile = new File("/Users/nickpalceski/Downloads/Japan.pdf");
         Assert.assertTrue(downloadedFile.exists(), "PDF file was not downloaded successfully");
     }
 

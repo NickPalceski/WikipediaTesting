@@ -14,7 +14,7 @@ public class BaseTest {
     public void beforeSuite(){
         System.out.println("(Before Suite) Preparing test suite");
         System.setProperty("webdriver.firefox.driver",
-                "C:\\Users\\nicho\\OneDrive\\Desktop\\Browser-Drivers\\geckodriver.exe");
+                "/Users/nickpalceski/Desktop/Github Repos/WikipediaTesting/src/main/java/org/WikiTest/geckodriver-v0.36.0-linux-aarch64.tar.gz");
     }
 
     @AfterSuite

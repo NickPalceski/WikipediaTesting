@@ -110,7 +110,7 @@ public class LoginTest extends BaseTest{
         logoutButton.click();
 
         // Verify that the user is logged out
-        WebElement loginLink = driver.findElement(By.id("pt-login"));
+        WebElement loginLink = driver.findElement(By.xpath("//a[contains(@title, \"You're encouraged to log in\")]"));
         Assert.assertTrue(loginLink.isDisplayed(), "User is not logged out.");
     }
 
@@ -125,7 +125,7 @@ public class LoginTest extends BaseTest{
         driver.get("https://en.wikipedia.org/w/index.php?title=Special:UserLogin&returnto=Main+Page");
 
         // Click the "Forgot Password" link
-        WebElement forgotPasswordLink = driver.findElement(By.cssSelector("a[title='Special:PasswordReset']"));
+        WebElement forgotPasswordLink = driver.findElement(By.xpath("//a[contains(@href, 'Special:PasswordReset')]"));
         forgotPasswordLink.click();
 
         // Verify that the page is reached
@@ -180,19 +180,17 @@ public class LoginTest extends BaseTest{
         loginButton.click();
 
         //verify that the user is logged in
-        WebElement dropDown = driver.findElement(By.id("vector-user-links-dropdown-checkbox"));
-        dropDown.click();
-        WebElement logoutButton = driver.findElement(By.xpath("//a[@title='Log out' and contains(@href, 'Special:UserLogout')]"));
-        Assert.assertTrue(logoutButton.isDisplayed(), "User is not logged in.");
+        WebElement userSpan = driver.findElement(By.xpath("//span[text()='SoftwareTestingTest']"));
+        Assert.assertTrue(userSpan.isDisplayed(), "Failed to login.");
 
-        //Reopen Wikipedia
+        //Reload Wikipedia
         driver.get("https://en.wikipedia.org/w/index.php?title=Special:UserLogin&returnto=Main+Page");
 
         // Wait for page response
         Thread.sleep(1000);
 
         // verify user is still logged in
-        WebElement userSpan = driver.findElement(By.xpath("//span[text()='SoftwareTestingTest']"));
+        userSpan = driver.findElement(By.xpath("//span[text()='SoftwareTestingTest']"));
         Assert.assertTrue(userSpan.isDisplayed(), "Failed to stay logged in.");
 
     }
