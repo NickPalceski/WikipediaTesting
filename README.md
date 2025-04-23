@@ -1,6 +1,10 @@
 # Wikipedia Testing
 
-Authors: Connor Plonka, Nicolas Palceski, Daniel Lowry, Alex Murillo
+## Authors:
+Connor Plonka\
+Nicolas Palceski\
+Daniel Lowry\
+Alex Murillo
 
 # Description
 
