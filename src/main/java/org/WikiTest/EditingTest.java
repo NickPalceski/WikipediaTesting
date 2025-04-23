@@ -1,3 +1,4 @@
+package org.WikiTest;
 
 // Selenium
 import org.openqa.selenium.Keys;
